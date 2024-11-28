@@ -1,0 +1,13 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.coding.yanky",
+    "lazyvim.plugins.extras.lang.go",
+    "lazyvim.plugins.extras.lang.omnisharp",
+    "lazyvim.plugins.extras.lsp.neoconf",
+    "lazyvim.plugins.extras.util.mini-hipatterns"
+  ],
+  "news": {
+    "NEWS.md": "7429"
+  },
+  "version": 7
+}
