@@ -51,3 +51,29 @@ require("lazy").setup({
     },
   },
 })
+
+require('mason').setup({
+  ensure_installed = {
+    'pylsp',  -- Ensure python-lsp-server is installed
+  }
+})
+
+require('lspconfig').pylsp.setup({
+  settings = {
+    pylsp = {
+      configurationSources = { "flake8" },
+      plugins = {
+        pycodestyle = {
+          enabled = false,
+          exclude = {},
+          filename = {},
+          hangClosing = false,
+          ignore = {},
+          indentSize = 4,
+          maxLineLength = 79,
+          select = {}
+        }
+      }
+    }
+  }
+})
